@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You, With Love</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: #fff9f9;
+            color: #3a1a1a;
+            overflow-x: hidden;
+        }
+        
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(255,245,245,0.9), rgba(255,245,245,0.9)), 
+                        url('https://images.unsplash.com/photo-1518199266791-5375a83190b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+            background-size: cover;
+        }
+        
+        h1 {
+            font-size: 5rem;
+            font-weight: 400;
+            margin: 0;
+            animation: fadeIn 3s;
+        }
+        
+        p.subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            opacity: 0;
+            animation: fadeIn 2s 1.5s forwards;
+        }
+        
+        .heart {
+            color: #d43f5a;
+            display: inline-block;
+            animation: pulse 2s infinite;
+            transform-origin: center;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        
+        .message {
+            max-width: 800px;
+            margin: 5rem auto;
+            padding: 0 2rem;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            opacity: 0;
+            animation: fadeIn 2s 3s forwards;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #3a1a1a;
+            color: #fff9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>I <span class="heart">❤</span> You</h1>
+        <p class="subtitle">So Much Sadia</p></p>
+    </div>
+    
+    <div class="message">
+        <p>Sometimes I search for the perfect words to describe what you mean to me, but language falls short. You're my sunrise and my sunset, the melody that plays in my heart, and the peace that settles my soul.</p>
+        <p>This simple website can't contain all that I feel, but I hope it serves as a reminder of how deeply you're loved.</p>
+    </div>
+    
+    <footer>
+        Created with love • Forever yours
+    </footer>
+</body>
+</html>
